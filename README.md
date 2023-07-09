@@ -1,2 +1,6 @@
 # fraudes
-![Matrix de confusión para el modelo entrenado](confusion_matrix.png)
+<img
+  src="confusion_matrix.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
