@@ -11,3 +11,4 @@ class Paths:
     model = os.path.join(path_file, "..", "..", "model", 'model.pkl')
     report = os.path.join(path_file, "..", "..", "..", 'report.txt')
     data_prep = os.path.join(path_file, "..", "..",  "..", "data", 'data_preparada.csv')
+    confusion_matrix = os.path.join(path_file, "..", "..",  "..", "images", 'confusion_matrix.png')

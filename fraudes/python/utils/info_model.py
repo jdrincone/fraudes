@@ -20,7 +20,7 @@ def save_simple_metrics_report(
         report_file.write(f'### accuracy: {accuracy}'+'\n')
 
 
-def image_confusion_matrix(y_true, y_pred):
+def image_confusion_matrix(y_true, y_pred, acuracy):
     fig, ax = plt.subplots()
     fig.set_figheight(8)
     fig.set_figwidth(8)
@@ -29,4 +29,5 @@ def image_confusion_matrix(y_true, y_pred):
         confusion_matrix=confusion_matrix, display_labels=[False, True])
 
     cm_display.plot()
-    plt.savefig('confusion_matrix.png')
+    plt.title(f'Acuracy: {acuracy}')
+    plt.savefig(Paths.confusion_matrix)

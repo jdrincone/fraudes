@@ -35,10 +35,11 @@ def train_model():
 
     conf_matrix = confusion_matrix(y_true=y_test, y_pred=predicciones)
     logger.info(f"confusion_matrix: {conf_matrix}")
-    image_confusion_matrix(y_test, predicciones)
-
     accuracy = accuracy_score(y_true=y_test, y_pred=predicciones, normalize=True)
-    logger.info(f"El accuracy score: {np.round(100 * accuracy,1)} %")
+    accuracy = f'{np.round(100 * accuracy,1)} %'
+    image_confusion_matrix(y_test, predicciones, accuracy)
+
+    logger.info(f"El accuracy score: {accuracy}")
 
     update_model(modelo)
     save_simple_metrics_report(conf_matrix, accuracy)
