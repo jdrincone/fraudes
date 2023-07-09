@@ -1,6 +1,2 @@
 # fraudes
-<img
-  src="confusion_matrix.png"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+![My Image](images/confusion_matrix.png)
