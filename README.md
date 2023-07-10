@@ -10,16 +10,30 @@ el cual tambien se encuentra en la raiz de este repositorio `tablero_fraudes.pbi
 - El punto 6
 
 #!!! **Extra:** este repositorio se realizó con el objetivo de emular el desarrollo de un proyecto real, siguiendo
-los lineamientos de la información que se encuentra en la rama de master.
+los lineamientos de la información que se encuentra en la rama de master, para su instalación y funcionamiento
+se debe seguir los siguientes pasos:
+- Clonar el repositorio
+```$ git https://github.com/jdrincone/fraudes.git
+```
+- Crear un entorno virtual e installar los requerimientos
+```$ pip install -r requeriments.txt
+```
+- Actualizar el modelo
+```$ python actualizar_modelo.py
+```
+- Levantar la api
+```$ uvicorn app_fraudes:app
+```
+** En lo los anteriores pasos se ha realizado**
 
-- Se crea estructura del repositorio siguiendo las buenas practicas de desarrollo y siguiento los convensional commits.
-- Se siguen las reglas del PEP8 para tener un código a lo pytonista.
-- Se realiza scripts para procesamiento y entrenamientos los cuales se encuentran en el modulo de `src`
+- Estructura de repositorio siguiendo las buenas practicas de desarrollo y siguiento los convensional commits.
+- Aplicación reglas del PEP8 para tener un código a lo pytonista.
+- Scripts para procesamiento y entrenamientos los cuales se encuentran en el modulo de `src`
 - Dado que no es debido subir a los repositorios la fuente de datos y menos credenciales de Bases de datos o
   fuentes de almacenamiento como el S3, en este caso, se toma los datos iniciales desde ruta en el S3 que temporalemte
   estará abierta.
-- Se crea script principal para actualizar modelo de clasificación.
-- Se genera API que dado las parámetros de una reclamación se indica si esta es un fraude o no, dentro de lo
+- Creación script principal para actualizar modelo de clasificación.
+- Creación API que dado las parámetros de una reclamación se indica si esta es un fraude o no, dentro de lo
   que el modelo lo permite.
 
 ![params](images/params.png)
@@ -27,6 +41,3 @@ los lineamientos de la información que se encuentra en la rama de master.
 
 
 ![My Image](images/confusion_matrix.png)
-
-Para correr este programa se debe seguir los siguientes pasos:
-Clonar el repositorio:
