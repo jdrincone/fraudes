@@ -13,18 +13,14 @@ el cual tambien se encuentra en la raiz de este repositorio `tablero_fraudes.pbi
 los lineamientos de la información que se encuentra en la rama de master, para su instalación y funcionamiento
 se debe seguir los siguientes pasos:
 - Clonar el repositorio
-```$ git https://github.com/jdrincone/fraudes.git
-```
+```git https://github.com/jdrincone/fraudes.git```
 - Crear un entorno virtual e installar los requerimientos
-```$ pip install -r requeriments.txt
-```
+```pip install -r requeriments.txt```
 - Actualizar el modelo
-```$ python actualizar_modelo.py
-```
+```$ python actualizar_modelo.py```
 - Levantar la api
-```$ uvicorn app_fraudes:app
-```
-** En lo los anteriores pasos se ha realizado**
+```uvicorn app_fraudes:app```
+**En lo los anteriores pasos se ha realizado**
 
 - Estructura de repositorio siguiendo las buenas practicas de desarrollo y siguiento los convensional commits.
 - Aplicación reglas del PEP8 para tener un código a lo pytonista.
