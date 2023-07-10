@@ -6,6 +6,7 @@
 notebook de trabajo `\fradues\notebook\notebook.ipynb`
 - La solución del punto 5 es un tablero realizado en Power BI [aqui](https://app.powerbi.com/view?r=eyJrIjoiNTdkYTJiMGYtZjBlNS00ZTIwLWIzNWItNTk5YTZlZTM3YTJmIiwidCI6Ijk5ZTFlNzIxLTcxODQtNDk4ZS04YWZmLWIyYWQ0ZTUzYzFjMiIsImMiOjR9)
 y en la raiz de este repositorio `tablero_fraudes.pbix`
+![My tablero](images/tablero.png)
 
 - El punto 6
 Las conclusiones generales después de analizar los datos con el notebook y Power BI, probar modelos de clasificación
