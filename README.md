@@ -8,6 +8,11 @@ notebook de trabajo `\fradues\notebook\notebook.ipynb`
 el cual tambien se encuentra en la raiz de este repositorio `tablero_fraudes.pbix`
 
 - El punto 6
+Las conclusiones generales después de analizar los datos con el notebook y Power BI, probar modelos de clasificación
+para detectar cuando una reclamación es un fraude y asi reducir las perdidas en dinero se pueden revisar el final
+del notebook de trabajo.
+
+![My Image](images/confusion_matrix.png)
 
 #!!! **Extra:** este repositorio se realizó con el objetivo de emular el desarrollo de un proyecto real, siguiendo
 los lineamientos de la información que se encuentra en la rama de master, para su instalación y funcionamiento
@@ -21,9 +26,11 @@ se debe seguir los siguientes pasos:
 ```pip install -r requeriments.txt```
 
 - Actualizar el modelo
+
 ```$ python actualizar_modelo.py```
 
 - Levantar la api
+
 ```uvicorn app_fraudes:app```
 
 **En lo los anteriores pasos se ha realizado**
@@ -41,5 +48,9 @@ se debe seguir los siguientes pasos:
 ![params](images/params.png)
 ![prediction](images/prediction.png)
 
-
-![My Image](images/confusion_matrix.png)
+**Consideraciones a futuro**
+A futuro se debe dockerizar la aplicación, crear funciones de testeo para el código que deben de estar en integracción
+ continua (CI) por medio de un pipeline con las git actions. El modelo y los datos se tactualizan continuamente
+ por tanto se debe realizar un pipeline para esta labor. De igual modo que se tiene completa trazabilidad del 
+ código, se debe tener trazabilidad de los datos y esto se logra con data version control (DVC).
+Por ultimo, el servicio puede ser desplegado por medio de una lambda fuction de AWS. (Trabajo es lo que hay!!!)
