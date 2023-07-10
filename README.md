@@ -5,7 +5,7 @@
 - La solución de los puntos del 1 al 4 se en encientran en `\input\problema_posgres.sql` y su explicación se encuentra en el
 notebook de trabajo `\fradues\notebook\notebook.ipynb`
 - La solución del punto 5 es un tablero realizado en Power BI [aqui](https://app.powerbi.com/view?r=eyJrIjoiNTdkYTJiMGYtZjBlNS00ZTIwLWIzNWItNTk5YTZlZTM3YTJmIiwidCI6Ijk5ZTFlNzIxLTcxODQtNDk4ZS04YWZmLWIyYWQ0ZTUzYzFjMiIsImMiOjR9)
-el cual tambien se encuentra en la raiz de este repositorio `tablero_fraudes.pbix`
+y en la raiz de este repositorio `tablero_fraudes.pbix`
 
 - El punto 6
 Las conclusiones generales después de analizar los datos con el notebook y Power BI, probar modelos de clasificación
