@@ -65,7 +65,7 @@ WITH CONS1 AS (
 					ROUND(SUM(FraudFound_P)  * 100.0/ COUNT(FraudFound_P),2) AS percentage_fraud_month
 				FROM fraudes
 				GROUP BY  Monthh)
-SELECT DISTINCT
+SELECT
 CONS1.Monthh,
 CONS1.WeekOfMonth,
 CONS1.DayOfWeek,
