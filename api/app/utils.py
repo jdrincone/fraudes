@@ -43,3 +43,18 @@ def transform_request(class_model: BaseModel):
     return request_new
 
 
+def transform_output(dict_input):
+    request_df = pd.DataFrame(dict_input)
+
+    fraudes_model = data_preparada()
+
+    total_fraudes = pd.concat([fraudes_model, request_df])
+    total_fraudes.drop('fraudfound_p', axis=1, inplace=True)
+    total_fraudes.drop_duplicates(inplace=True)
+    total_fraudes_pre = prepocesar_data(total_fraudes)
+
+    request_new = total_fraudes_pre.tail(1)
+
+    return request_new, request_df
+
+
